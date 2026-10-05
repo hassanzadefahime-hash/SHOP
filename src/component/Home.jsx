@@ -14,7 +14,7 @@ import {
   MdOutlineWebAsset,
 } from "react-icons/md";
 
-import SwiperDesign from "./SwiperDesign";
+import SwiperDesign from "./PromoSlider";
 import ArticleCard from "./ArticleCard";
 import NewProductCard from "./NewProductCard";
 import HeroSection from "./HeroSection";

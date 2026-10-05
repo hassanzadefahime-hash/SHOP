@@ -1,23 +1,25 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useSelector } from "react-redux";
+import { useParams } from "react-router-dom";
+
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 
-import "../../src/App.css";
-
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
-import { useSelector } from "react-redux";
-import { useParams } from "react-router-dom";
-import ProductForm from "./AddToCart";
-
-import CustomNumeralNumericFormat from "../../../STICKER-SHOP/src/components/CustomNumeralNumericFormat";
-import { useGetAllCategoryQuery } from "../slices/productApi";
-import Gard from "./ModelSelector";
 import { LuBadgeCheck, LuShieldCheck } from "react-icons/lu";
 
-const SingleProductPage = () => {
+import "../../src/App.css";
+
+import ProductForm from "./AddToCart";
+import Gard from "./ModelSelector";
+
+import CustomNumeralNumericFormat from "../../../STICKER-SHOP/src/components/CustomNumeralNumericFormat";
+
+
+const ProductDetailPage = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   const { productID } = useParams();
@@ -25,9 +27,8 @@ const SingleProductPage = () => {
   const product = useSelector((state) =>
     state.products.items.find((item) => item.id === productID)
   );
-  const { data } = useGetAllCategoryQuery();
 
-  const group = data.find((group) => group.id === product.groupId);
+
 
   return (
     <>
@@ -50,10 +51,12 @@ const SingleProductPage = () => {
                 <img src={`http://localhost:9000/images/${product.sticker}`} />
               </div>
             </SwiperSlide>
+
             <SwiperSlide>
               <img src={`http://localhost:9000/images/${product.sticker}`} />
             </SwiperSlide>
           </Swiper>
+
           <Swiper
             onSwiper={setThumbsSwiper}
             loop={true}
@@ -66,16 +69,23 @@ const SingleProductPage = () => {
           >
             <SwiperSlide>
               <div className="h-20 ">
-                <img src={`http://localhost:9000/images/${product.sticker}`} />
+                <img
+                  src={`http://localhost:9000/images/${product.sticker}`}
+                />
               </div>
             </SwiperSlide>
+
             <SwiperSlide className="h-20 ">
               <img src={`http://localhost:9000/images/${product.sticker}`} />
             </SwiperSlide>
           </Swiper>
         </div>
+
         <div className="w-full lg:w-[65%] md:pr-6 ">
-          <p className="md:text-4xl text-2xl text-bold py-6">{product.title}</p>
+          <p className="md:text-4xl text-2xl text-bold py-6">
+            {product.title}
+          </p>
+
           <ul className="md:text-lg text-base flex gap-3 flex-col">
             <p className="leading-9  mt-6 text-justify">
               قاب سیلیکونی مگ‌سیف با طراحی مینیمال، ساخته‌شده از سیلیکون نرم و
@@ -84,6 +94,7 @@ const SingleProductPage = () => {
               به خارج کردن قاب می‌توانید گوشی خود را شارژ کنید.
             </p>
           </ul>
+
           <div className="flex py-8 flex-col gap-3">
             {product.discount > 0 ? (
               <p className="text-xl line-through text-gray-500">
@@ -100,7 +111,10 @@ const SingleProductPage = () => {
 
             <p className="text-2xl">
               <CustomNumeralNumericFormat
-                value={product.price - (product.price * product.discount) / 100}
+                value={
+                  product.price -
+                  (product.price * product.discount) / 100
+                }
                 thousandSeparator=","
                 prefix="قیمت : "
                 suffix=" تومان "
@@ -109,6 +123,7 @@ const SingleProductPage = () => {
               />
             </p>
           </div>
+
           <div>
             <Gard />
           </div>
@@ -118,13 +133,16 @@ const SingleProductPage = () => {
           </div>
         </div>
       </div>
+
       <div className="flex items-center justify-center  mt-8 mb-6 pt-4"></div>
+
       <div className="md:w-[80%] w-[90%] mx-auto border border-gray-300 rounded-xl px-8 py-6 mb-4">
         <div className="flex items-center gap-2 mb-8">
           <LuBadgeCheck className=" text-3xl" />
 
           <h2 className="text-2xl font-bold">ویژگی‌های محصول</h2>
         </div>
+
         <div className="grid grid-cols-3 gap-8">
           <div className="flex gap-2 flex-col">
             <div className="flex gap-2 items-center">
@@ -136,6 +154,7 @@ const SingleProductPage = () => {
               >
                 <LuShieldCheck className="text-[#2980b9] text-2xl" />
               </div>
+
               <p className="text-xl font-bold">
                 سازگار با شارژ بی‌سیم و مگ‌سیف
               </p>
@@ -145,6 +164,7 @@ const SingleProductPage = () => {
               محافظت مناسب از گوشی در برابر خط‌وخش، ضربه و آسیب‌های روزمره.
             </p>
           </div>
+
           <div className="flex gap-2 flex-col">
             <div className="flex gap-2 items-center">
               <div
@@ -155,6 +175,7 @@ const SingleProductPage = () => {
               >
                 <LuShieldCheck className="text-[#2980b9] text-2xl" />
               </div>
+
               <p className="text-xl font-bold">
                 محافظت کامل از لبه‌ها و دوربین
               </p>
@@ -164,6 +185,7 @@ const SingleProductPage = () => {
               طراحی برجسته اطراف دوربین و لبه‌های قاب برای محافظت بیشتر.
             </p>
           </div>
+
           <div className="flex gap-2 flex-col">
             <div className="flex gap-2 items-center">
               <div
@@ -174,6 +196,7 @@ const SingleProductPage = () => {
               >
                 <LuShieldCheck className="text-[#2980b9] text-2xl" />
               </div>
+
               <p className="text-xl font-bold">پوشش داخلی میکروفایبر نرم</p>
             </div>
 
@@ -181,6 +204,7 @@ const SingleProductPage = () => {
               جلوگیری از ایجاد خط‌وخش روی بدنه گوشی در استفاده طولانی‌مدت.
             </p>
           </div>
+
           <div className="flex gap-2 flex-col">
             <div className="flex gap-2 items-center">
               <div
@@ -191,6 +215,7 @@ const SingleProductPage = () => {
               >
                 <LuShieldCheck className="text-[#2980b9] text-2xl" />
               </div>
+
               <p className="text-xl font-bold"> طراحی مینیمال و شیک</p>
             </div>
 
@@ -198,6 +223,7 @@ const SingleProductPage = () => {
               ظاهر ساده و جذاب، مناسب استفاده روزمره و استایل‌های مختلف.
             </p>
           </div>
+
           <div className="flex gap-2 flex-col">
             <div className="flex gap-2 items-center">
               <div
@@ -208,6 +234,7 @@ const SingleProductPage = () => {
               >
                 <LuShieldCheck className="text-[#2980b9] text-2xl" />
               </div>
+
               <p className="text-xl font-bold"> خوش‌دست و سبک</p>
             </div>
 
@@ -215,6 +242,7 @@ const SingleProductPage = () => {
               طراحی ارگونومیک برای در دست گرفتن راحت گوشی بدون ایجاد حجم اضافی.
             </p>
           </div>
+
           <div className="flex gap-2 flex-col">
             <div className="flex gap-2 items-center">
               <div
@@ -225,6 +253,7 @@ const SingleProductPage = () => {
               >
                 <LuShieldCheck className="text-[#2980b9] text-2xl" />
               </div>
+
               <p className="text-xl font-bold"> دسترسی آسان به دکمه‌ها</p>
             </div>
 
@@ -237,4 +266,5 @@ const SingleProductPage = () => {
     </>
   );
 };
-export default SingleProductPage;
+
+export default ProductDetailPage;

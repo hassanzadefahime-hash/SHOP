@@ -1,4 +1,4 @@
-import { Children, StrictMode } from "react";
+import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
@@ -11,16 +11,16 @@ import {
 } from "react-router-dom";
 import NotFound from "./component/NotFound";
 import ContactUs from "./component/ContactUs";
-import Shop from "./component/Shop";
 import AboutUs from "./component/AboutUs";
-import SingleProductPage from "./component/SingleProductpage";
+import SingleProductPage from "./component/ProductDetailPage";
 
 import ProductsGroup from "./component/ProductsGroupPage";
 import ArticlePage from "./component/ArticlePage";
-import Signin from "./component/Signin";
+import Signin from "./component/SignIn";
 import ArticleList from "./component/ArticleList";
 import CartDesktop from "./component/CartDesktop";
 import Home from "./component/Home";
+import ShopPage from "./component/ShopPage";
 
 const router = createBrowserRouter([
   {
@@ -43,7 +43,7 @@ const router = createBrowserRouter([
       },
       {
         path: "products",
-        element: <Shop />,
+        element: <ShopPage />,
       },
       {
         path: "/group/:groupId",
