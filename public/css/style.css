@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Vazir';
+    src: url('../fonts/BYekan.eot');
+    src: url('../fonts/BYekan.eot') format('embedded-opentype'),
+        url('../fonts/BYekan.woff2') format('woff2'),
+        url('../fonts/BYekan.woff') format('woff'),
+        url('../fonts/BYekan.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #4b6cb7 0%, #182848 51%, #4b6cb7 100%);
+  }
+  
+  .btn-grad {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    outline: none;
+    border: none;
+  }
+  
+  .btn-grad:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .number {
+    font-variant-numeric: lining-nums;
+  }
