@@ -14,11 +14,12 @@ import {
   MdOutlineWebAsset,
 } from "react-icons/md";
 
-import SwiperDesign from "./PromoSlider";
+
 import ArticleCard from "./ArticleCard";
 import NewProductCard from "./NewProductCard";
 import HeroSection from "./HeroSection";
 import OfferProductCard from "./OfferProductCard";
+import PromoSlider from "./PromoSlider";
 
 const Home = () => {
   const { data: products } = useGetAllProductsQuery();
@@ -100,7 +101,7 @@ const Home = () => {
         </div>
       </div>
 
-      <SwiperDesign />
+      <PromoSlider />
 
       <div className="md:w-[80%] w-[95%] mx-auto">
         <div className="flex items-center justify-between mb-10 mt-16">

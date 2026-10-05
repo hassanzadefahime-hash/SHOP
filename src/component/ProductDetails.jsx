@@ -13,13 +13,13 @@ import { LuBadgeCheck, LuShieldCheck } from "react-icons/lu";
 
 import "../../src/App.css";
 
-import ProductForm from "./AddToCart";
-import Gard from "./ModelSelector";
 
 import CustomNumeralNumericFormat from "../../../STICKER-SHOP/src/components/CustomNumeralNumericFormat";
+import ModelSelector from "./ModelSelector";
+import AddToCart from "./AddToCart";
 
 
-const ProductDetailPage = () => {
+const ProductDetails = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   const { productID } = useParams();
@@ -125,11 +125,11 @@ const ProductDetailPage = () => {
           </div>
 
           <div>
-            <Gard />
+            <ModelSelector />
           </div>
 
           <div className="w-full mt-8">
-            <ProductForm product={product} />
+            <AddToCart product={product} />
           </div>
         </div>
       </div>
@@ -267,4 +267,4 @@ const ProductDetailPage = () => {
   );
 };
 
-export default ProductDetailPage;
+export default ProductDetails;

@@ -8,8 +8,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import NotFound from "./component/NotFound";
 import ContactUs from "./component/ContactUs";
 import AboutUs from "./component/AboutUs";
-import SingleProductPage from "./component/ProductDetailPage";
-
+import ProductDetails from "./component/ProductDetails";
 import ProductsGroup from "./component/ProductsGroupPage";
 import ArticlePage from "./component/ArticlePage";
 import Signin from "./component/SignIn";
@@ -17,6 +16,7 @@ import ArticleList from "./component/ArticleList";
 import CartDesktop from "./component/CartDesktop";
 import Home from "./component/Home";
 import ShopPage from "./component/ShopPage";
+
 
 const router = createBrowserRouter([
   {
@@ -51,7 +51,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/products/:productID",
-        element: <SingleProductPage />,
+        element: <ProductDetails />,
       },
       {
         path: "/article",
