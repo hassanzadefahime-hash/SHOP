@@ -4,11 +4,7 @@ import "./index.css";
 import App from "./App.jsx";
 import { Provider } from "react-redux";
 import { store } from "./store";
-import {
-  BrowserRouter,
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import NotFound from "./component/NotFound";
 import ContactUs from "./component/ContactUs";
 import AboutUs from "./component/AboutUs";
@@ -39,7 +35,7 @@ const router = createBrowserRouter([
       },
       {
         path: "contactus",
-        Component: ContactUs,
+        element: <ContactUs />,
       },
       {
         path: "products",
@@ -60,13 +56,15 @@ const router = createBrowserRouter([
       {
         path: "/article",
         element: <ArticleList />,
-      },{
-        path:"/article/:articleId",
-        element:<ArticlePage />
-      },{
-        path:"/signin",
-        element:<Signin />
-      }
+      },
+      {
+        path: "/article/:articleId",
+        element: <ArticlePage />,
+      },
+      {
+        path: "/signin",
+        element: <Signin />,
+      },
     ],
   },
 ]);
@@ -77,11 +75,4 @@ createRoot(document.getElementById("root")).render(
       <RouterProvider router={router} />
     </Provider>
   </StrictMode>
-
-  // <StrictMode>
-  //   <>
-  //     <App />
-  //     <h1>lll</h1>
-  //   </>
-  // </StrictMode>
 );

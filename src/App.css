@@ -249,7 +249,7 @@ Retrieved 2026-06-13, License - CC BY-SA 4.0
 /* HTML: <div class="rounded-edge"></div> */
 .rounded-edge {
   /* height: 200px; */
-  
+
   /* update the 85% to control the curvature
      you can also update the 50% to control the position
   */
@@ -257,11 +257,19 @@ Retrieved 2026-06-13, License - CC BY-SA 4.0
   clip-path: ellipse(85% 100% at 50% 0%);
   background: #8e0e00; /* fallback for old browsers */
   background: #ff8008; /* fallback for old browsers */
-  background: #4B79A1;  /* fallback for old browsers */
-  background: #2980b9;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2c3e50, #2980b9);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2c3e50, #2980b9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}  
+  background: #4b79a1; /* fallback for old browsers */
+  background: #2980b9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c3e50,
+    #2980b9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c3e50,
+    #2980b9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 /* HTML: <div class="rounded-edge"></div> */
 .rounded-edge-product {
   aspect-ratio: 3/2;
@@ -310,12 +318,7 @@ Retrieved 2026-06-13, License - CC BY-SA 4.0
     black 100%
   );
 
-  mask-image: linear-gradient(
-    to left,
-    transparent 0%,
-    black 20%,
-    black 100%
-  );
+  mask-image: linear-gradient(to left, transparent 0%, black 20%, black 100%);
 }
 
 @keyframes rotate {
@@ -330,7 +333,7 @@ Retrieved 2026-06-13, License - CC BY-SA 4.0
   --s: 40px; /* control the size of the cut */
   --a: 20deg; /* control the depth of the curvature */
   --p: 50%;
-  
+
   height: 200px;
   aspect-ratio: 3/2;
   border-radius: var(--r);
@@ -361,13 +364,13 @@ Retrieved 2026-06-13, License - CC BY-SA 4.0
   background-color: #96f1b0; /* رنگ نقطه فعال */
 }
 .bg-style-orange {
-/* From https://css.glass */
-background: rgba(255, 123, 28, 0.15);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(0.7px);
--webkit-backdrop-filter: blur(0.7px);
-border: 1px solid rgba(255, 123, 28, 0.07);
+  /* From https://css.glass */
+  background: rgba(255, 123, 28, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.7px);
+  -webkit-backdrop-filter: blur(0.7px);
+  border: 1px solid rgba(255, 123, 28, 0.07);
 }
 
 .blob {
@@ -438,14 +441,14 @@ border: 1px solid rgba(255, 123, 28, 0.07);
 .animate-flip {
   animation: flip 8s ease-in-out infinite;
 }
-.bg-green{
+.bg-green {
   /* From https://css.glass */
-background: rgba(82, 255, 4, 0.55);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(82, 255, 4, 0.3);
+  background: rgba(82, 255, 4, 0.55);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(82, 255, 4, 0.3);
 }
 
 @property --angle {
@@ -457,35 +460,39 @@ border: 1px solid rgba(82, 255, 4, 0.3);
 /* HTML: <div class="squircle"></div> */
 .squircle {
   --r: 50%; /* between 0% [square] and 50% [squircle] (you can use pixel as well) */
-  
-  --_r: clamp(0%,var(--r)/2,25%);
-  --_v: calc(var(--_r)*(1 - sqrt(2)/4));
-  --_p: calc(var(--_v) - var(--_r)/2);
+
+  --_r: clamp(0%, var(--r) / 2, 25%);
+  --_v: calc(var(--_r) * (1 - sqrt(2) / 4));
+  --_p: calc(var(--_v) - var(--_r) / 2);
   clip-path: shape(
     from var(--_v) var(--_p),
     curve to 50% 0 with var(--_r) 0,
     curve to calc(100% - var(--_v)) var(--_p) with calc(100% - var(--_r)) 0,
-    curve to calc(100% - var(--_p)) var(--_v) with calc(100% - 2*var(--_p)) calc(2*var(--_p)),
+    curve to calc(100% - var(--_p)) var(--_v) with calc(100% - 2 * var(--_p))
+      calc(2 * var(--_p)),
     curve to 100% 50% with 100% var(--_r),
-    curve to calc(100% - var(--_p)) calc(100% - var(--_v)) with 100% calc(100% - var(--_r)),
-    curve to calc(100% - var(--_v)) calc(100% - var(--_p)) with calc(100% - 2*var(--_p)) calc(100% - 2*var(--_p)),
+    curve to calc(100% - var(--_p)) calc(100% - var(--_v)) with 100%
+      calc(100% - var(--_r)),
+    curve to calc(100% - var(--_v)) calc(100% - var(--_p)) with
+      calc(100% - 2 * var(--_p)) calc(100% - 2 * var(--_p)),
     curve to 50% 100% with calc(100% - var(--_r)) 100%,
     curve to var(--_v) calc(100% - var(--_p)) with var(--_r) 100%,
-    curve to var(--_p) calc(100% - var(--_v)) with calc(2*var(--_p)) calc(100% - 2*var(--_p)),
+    curve to var(--_p) calc(100% - var(--_v)) with calc(2 * var(--_p))
+      calc(100% - 2 * var(--_p)),
     curve to 0 50% with 0 calc(100% - var(--_r)),
     curve to var(--_p) var(--_v) with 0 var(--_r),
-    curve to var(--_v) var(--_p) with calc(2*var(--_p)) calc(2*var(--_p))
+    curve to var(--_v) var(--_p) with calc(2 * var(--_p)) calc(2 * var(--_p))
   );
-  
+
   aspect-ratio: 1;
 }
 
-
-
 /* Use these custom variables... */
 :root {
-  --polka-bg-image:
-    radial-gradient(rgb(255, 255, 255) 27.2%, transparent 27.2%);
+  --polka-bg-image: radial-gradient(
+    rgb(255, 255, 255) 27.2%,
+    transparent 27.2%
+  );
   --polka-bg-position: 8px 8px;
   --polka-bg-size: 16px 16px;
   --polka-bg-color: rgb(255, 51, 51);
@@ -493,27 +500,27 @@ border: 1px solid rgba(82, 255, 4, 0.3);
 
 /* ...or add this class to an element */
 .polka {
-  background-image: 
-    radial-gradient(rgba(255, 255, 255, 0.346) 27.2%, transparent 27.2%);
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.346) 27.2%,
+    transparent 27.2%
+  );
   background-position: 8px 8px;
   background-size: 16px 16px;
   background-color: rgba(255, 51, 51, 0);
 }
 
-.bg-glass{
-/* From https://css.glass */
-background: rgba(255, 255, 255, 0.07);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(2.7px);
--webkit-backdrop-filter: blur(2.7px);
-border: 1px solid rgba(255, 255, 255, 0.09);
+.bg-glass {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.7px);
+  -webkit-backdrop-filter: blur(2.7px);
+  border: 1px solid rgba(255, 255, 255, 0.09);
 }
 
 .mySwiper2 {
- 
   --swiper-navigation-color: #343333 !important;
-  
 }
 
 .mySwiper2 .swiper-button-next,
@@ -529,33 +536,37 @@ border: 1px solid rgba(255, 255, 255, 0.09);
   height: 150px;
   aspect-ratio: 3/2;
   /* you can also update the 60%  */
-  mask: radial-gradient(60% var(--c) at top,#0000 calc(100% - 1px),#000);
+  mask: radial-gradient(60% var(--c) at top, #0000 calc(100% - 1px), #000);
   background: #8e0e00; /* fallback for old browsers */
   background: #ff8008; /* fallback for old browsers */
-  background: #4B79A1;  /* fallback for old browsers */
-  background: #2980b9;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2c3e50, #2980b9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: #4b79a1; /* fallback for old browsers */
+  background: #2980b9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c3e50,
+    #2980b9
+  ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2c3e50, #2980b9);
 }
 
-.bg-color-bg{
+.bg-color-bg {
   /* From https://css.glass */
   background: rgba(193, 210, 218, 0.13);
   border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(2.7px);
--webkit-backdrop-filter: blur(2.7px);
-border: 1px solid rgba(48, 165, 220, 0.13);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.7px);
+  -webkit-backdrop-filter: blur(2.7px);
+  border: 1px solid rgba(48, 165, 220, 0.13);
 }
 
-.bg-category{
-/* From https://css.glass */
-background: rgba(0, 0, 0, 0.46);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(4.6px);
--webkit-backdrop-filter: blur(4.6px);
-border: 1px solid rgba(0, 0, 0, 0.1);
+.bg-category {
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.46);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.6px);
+  -webkit-backdrop-filter: blur(4.6px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .wave {
@@ -564,13 +575,7 @@ border: 1px solid rgba(0, 0, 0, 0.1);
   left: -10%;
   width: 120%;
   height: 100px;
-  background: linear-gradient(
-    90deg,
-    #1A2B4D,
-    #2980B9
-  );
+  background: linear-gradient(90deg, #1a2b4d, #2980b9);
 
   border-radius: 50% 50% 0 0 / 100% 100% 0 0;
 }
-
-
