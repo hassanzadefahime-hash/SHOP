@@ -24,7 +24,7 @@ const AddToCart = ({ product }) => {
 
   return (
     <div className="w-full">
-      <div className="flex justify-start space-x-2 w-full flex flex-col gap-4">
+      <div className="flex justify-start space-x-2 w-full flex-col gap-4">
         <div className="flex flex-col items-start space-y-1">
           <div className="flex flex-row md:h-10 h-6 rounded-lg relative bg-transparent mt-1 quantity">
             <button
@@ -69,7 +69,6 @@ const AddToCart = ({ product }) => {
 
       <button
         className="flex gap-2 bg-gradient-to-r from-[#2a5298] to-[#2a5298] items-center justify-center block lg:mx-auto mx-auto py-2.5 px-8.5 mt-8 text-[#eee] rounded-lg"
-        style={{}}
         aria-label="cart-button"
         onClick={() => handleAddToCart({ ...product, cartQty: qty })}
       >

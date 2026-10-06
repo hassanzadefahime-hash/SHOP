@@ -2,10 +2,9 @@ import { useParams } from "react-router-dom";
 import { useGetArticleByIdQuery } from "../slices/productApi";
 
 const ArticlePage = () => {
-  
   const { articleId } = useParams();
   const { data } = useGetArticleByIdQuery(articleId);
-
+  
   return (
     <div className="lg:w-[70%] w-[95%] mx-auto">
       <div
