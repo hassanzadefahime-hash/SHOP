@@ -9,17 +9,13 @@ function ModelSelector() {
         {models.map((model) => (
           <li key={model}>
             <label>
-              <input
-                type="checkbox"
-                value={model}
-                className="peer hidden"
-              />
+              <input type="checkbox" value={model} className="peer hidden" />
 
               <span
-              style={{
-                fontFamily: "Arial",
-                fontVariantNumeric: "normal",
-              }}
+                style={{
+                  fontFamily: "Arial",
+                  fontVariantNumeric: "normal",
+                }}
                 dir="ltr"
                 className="
                   cursor-pointer
@@ -35,7 +31,6 @@ function ModelSelector() {
               >
                 {model}
               </span>
-            
             </label>
           </li>
         ))}

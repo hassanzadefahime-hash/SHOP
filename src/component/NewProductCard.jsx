@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-
-import CustomNumeralNumericFormat from "../../../STICKER-SHOP/src/components/CustomNumeralNumericFormat";
+import CustomNumeralNumericFormat from "./CustomNumeralNumericFormat";
 
 const NewProductCard = ({ product }) => {
   return (
@@ -25,7 +24,7 @@ const NewProductCard = ({ product }) => {
           </div>
         </div>
 
-        <div className="md:px-3 w-3/5 md:w-full bg-white md:-mt-4 pr-4 pl-4 md:pt-0 md:pt-2 pt-0 flex flex-col justify-between gap-2 pb-1">
+        <div className="md:px-3 w-3/5 md:w-full bg-white md:-mt-4 pr-4 pl-4 md:pt-2 pt-0 flex flex-col justify-between gap-2 pb-1">
           <div className="flex flex-col gap-2 md:pt-1 pt-3 md:px-2">
             <p className="md:text-lg text-sm text-gray-600 font-bold">
               {product.title}
