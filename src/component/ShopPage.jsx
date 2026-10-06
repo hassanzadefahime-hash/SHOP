@@ -46,13 +46,15 @@ const ShopPage = () => {
 
   return (
     <>
+      {" "}
       <div className="flex w-[95%] gap-8 mx-auto items-start">
+        {" "}
         <div className="lg:w-[20%] w-[10%] mx-auto my-20 sticky top-4 border-1 border-gray-300 lg:block hidden rounded-xl flex flex-col text-xl p-4">
+          {" "}
           <div className="flex gap-2 border-b-1 border-gray-300 pb-3">
-            <RiSortAsc />
-            <p>فیلتر محصولات</p>
+            {" "}
+            <RiSortAsc /> <p>فیلتر محصولات</p>{" "}
           </div>
-
           <ul className="flex flex-col gap-2 text-lg pt-3">
             {groupList?.map((group) => (
               <li key={group.id}>
@@ -63,7 +65,6 @@ const ShopPage = () => {
             ))}
           </ul>
         </div>
-
         <div className="md:w-[80%] w-[90%] mx-auto my-20">
           <div className="flex lg:gap-3 md:gap-2 gap-2 flex-wrap md:mb-8 mb-6 items-center">
             <div className="flex gap-2 items-center font-bold text-lg">
@@ -72,7 +73,6 @@ const ShopPage = () => {
             </div>
 
             <button
-              value="low"
               onClick={() => setGroupId(null)}
               className={
                 sort === ""
@@ -84,7 +84,6 @@ const ShopPage = () => {
             </button>
 
             <button
-              value="low"
               onClick={() => setSort("low")}
               className={
                 sort === "low"
@@ -96,7 +95,6 @@ const ShopPage = () => {
             </button>
 
             <button
-              value="high"
               onClick={() => setSort("high")}
               className={
                 sort === "high"
@@ -108,7 +106,6 @@ const ShopPage = () => {
             </button>
 
             <button
-              value="offer"
               onClick={() => setSort("offer")}
               className={
                 sort === "offer"
@@ -122,21 +119,13 @@ const ShopPage = () => {
 
           <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 md:gap-4 gap-2">
             {status === "success" ? (
-              <>
-                {sortedProducts.map((product, index) =>
-                  product.discount > 0 ? (
-                    <OfferProductCard
-                      product={product}
-                      key={index}
-                    />
-                  ) : (
-                    <ProductCard
-                      product={product}
-                      key={index}
-                    />
-                  )
-                )}
-              </>
+              sortedProducts.map((product) =>
+                product.discount > 0 ? (
+                  <OfferProductCard product={product} key={product.id} />
+                ) : (
+                  <ProductCard product={product} key={product.id} />
+                )
+              )
             ) : status === "pending" ? (
               <p>در حال بارگذاری ...</p>
             ) : (

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import {
@@ -9,11 +8,7 @@ import {
 
 import { TbArticle, TbCategory } from "react-icons/tb";
 import { FaAngleLeft } from "react-icons/fa";
-import {
-  MdOutlineLocalOffer,
-  MdOutlineWebAsset,
-} from "react-icons/md";
-
+import { MdOutlineLocalOffer, MdOutlineWebAsset } from "react-icons/md";
 
 import ArticleCard from "./ArticleCard";
 import NewProductCard from "./NewProductCard";
@@ -24,17 +19,13 @@ import PromoSlider from "./PromoSlider";
 const Home = () => {
   const { data: products } = useGetAllProductsQuery();
   const { data } = useGetAllCategoryQuery();
-  const [group, setGroup] = useState("");
   const { data: articles } = useGetAllArticleQuery();
 
-  const offerProduct = products?.filter(
-    (product) => product.discount > 0
-  );
+  const offerProduct = products?.filter((product) => product.discount > 0);
 
   return (
     <>
       <HeroSection />
-
       <div className="md:w-[80%] w-[90%] mx-auto mt-16">
         <div className="flex gap-3 items-center mb-10">
           <TbCategory fontSize={28} />
@@ -48,10 +39,7 @@ const Home = () => {
               className="aspect-square"
               key={item.id}
             >
-              <button
-                className="lg:h-[100%] w-full h-full relative bo flex flex-col md:gap-1 gap-2 justify-center items-center aspect-square"
-                onClick={() => setGroup(item.id)}
-              >
+              <button className="lg:h-[100%] w-full h-full relative bo flex flex-col md:gap-1 gap-2 justify-center items-center aspect-square">
                 <img
                   className="lg:h-[100%] w-full h-full absolute"
                   src={`http://localhost:9000/images/${item.pic}`}
@@ -89,20 +77,14 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       <div className="md:w-[80%] w-[95%] mx-auto mb-20">
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-4 gap-2">
           {offerProduct?.slice(0, 4).map((product) => (
-            <OfferProductCard
-              product={product}
-              key={product.id}
-            />
+            <OfferProductCard product={product} key={product.id} />
           ))}
         </div>
       </div>
-
       <PromoSlider />
-
       <div className="md:w-[80%] w-[95%] mx-auto">
         <div className="flex items-center justify-between mb-10 mt-16">
           <div className="flex gap-3 items-center">
@@ -118,14 +100,10 @@ const Home = () => {
 
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-4 gap-2">
           {products?.slice(0, 4).map((product) => (
-            <NewProductCard
-              key={product.id}
-              product={product}
-            />
+            <NewProductCard key={product.id} product={product} />
           ))}
         </div>
       </div>
-
       <div className="w-[80%] mx-auto my-20">
         <div className="flex items-center justify-between mb-8 mt-16">
           <div className="flex gap-3 items-center">
@@ -141,10 +119,7 @@ const Home = () => {
 
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
           {articles?.slice(0, 2).map((article) => (
-            <ArticleCard
-              key={article.id}
-              article={article}
-            />
+            <ArticleCard key={article.id} article={article} />
           ))}
         </div>
       </div>

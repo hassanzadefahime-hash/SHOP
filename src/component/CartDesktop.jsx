@@ -1,8 +1,9 @@
 import { useEffect } from "react";
-import { HiXMark } from "react-icons/hi2";
-import { FaChevronLeft } from "react-icons/fa6";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+
+import { HiXMark } from "react-icons/hi2";
+import { FaChevronLeft } from "react-icons/fa6";
 import { IoCartOutline } from "react-icons/io5";
 
 import {
@@ -20,7 +21,6 @@ import EmptyCart from "./EmptyCart";
 const CartDesktop = () => {
   const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
-  const { cartTotalQty } = useSelector((state) => state.cart);
 
   useEffect(() => {
     dispatch(getTotals());
@@ -39,9 +39,9 @@ const CartDesktop = () => {
   };
 
   return (
-    <div className="container mx-auto  min-h-screen ">
+    <div className="container mx-auto min-h-screen">
+      {" "}
       <title>سبد خرید | فروشگاه استیکر</title>
-
       {cart.cartItems.length === 0 ? (
         <div className="text-center mt-10 h-full">
           <EmptyCart />
@@ -53,30 +53,30 @@ const CartDesktop = () => {
           </div>
 
           <div className="md:w-[90%] w-[90%] mt-10 mx-auto md:block hidden">
-            <div className="py-8 flex  md:gap-3 gap-1 pr-2">
+            <div className="py-8 flex md:gap-3 gap-1 pr-2">
               <IoCartOutline fontSize={26} />
               <p className="md:text-2xl text-lg">سبد خرید</p>
             </div>
 
-            <div className="flex md:flex-row flex-col gap-4 mx-auto items-start justify-center ">
-              <div className=" md:w-[70%] w-full">
-                {cart.cartItems.map((item, index) => (
+            <div className="flex md:flex-row flex-col gap-4 mx-auto items-start justify-center">
+              <div className="md:w-[70%] w-full">
+                {cart.cartItems.map((item) => (
                   <div
-                    className="border-1 border-gray-300  grid grid-cols-3 rounded-2xl overflow-hidden mb-4"
-                    key={index}
+                    className="border-1 border-gray-300 grid grid-cols-3 rounded-2xl overflow-hidden mb-4"
+                    key={item.id}
                   >
-                    <div className="">
+                    <div>
                       <img
                         src={`http://localhost:9000/images/${item.sticker}`}
                         alt={item.title}
                         height={185}
                         width={190}
-                        className={`hidden sm:inline-flex`}
+                        className="hidden sm:inline-flex"
                       />
                     </div>
 
-                    <div className=" flex flex-col py-6 justify-between ">
-                      <div className="flex gap-3 flex-col ">
+                    <div className="flex flex-col py-6 justify-between">
+                      <div className="flex gap-3 flex-col">
                         <Link
                           to={`/products/${item.id}`}
                           className="pt-1 hover:text-palette-dark text-xl"
@@ -100,26 +100,23 @@ const CartDesktop = () => {
                     <div className="flex flex-col items-end justify-between md:pl-8 pl-4 md:py-6 py-4">
                       <button
                         aria-label="delete-item"
-                        className=""
                         onClick={() => handleRemoveFromCart(item)}
                       >
                         <HiXMark />
                       </button>
 
-                      <div className="">
-                        <QtyInput
-                          qty={item.cartQty}
-                          decrementQty={() => handleDecreaseCart(item)}
-                          incrementQty={() => handleAddToCart(item)}
-                        />
-                      </div>
+                      <QtyInput
+                        qty={item.cartQty}
+                        decrementQty={() => handleDecreaseCart(item)}
+                        incrementQty={() => handleAddToCart(item)}
+                      />
                     </div>
                   </div>
                 ))}
               </div>
 
               <div className="border-1 border-gray-300 md:w-[32%] w-full rounded-2xl px-8 py-8 flex flex-col gap-5">
-                <p className=" text-xl font-bold md:text-base text-sm">
+                <p className="text-xl font-bold md:text-base text-sm">
                   خلاصه سفارش
                 </p>
 
@@ -127,7 +124,7 @@ const CartDesktop = () => {
                   <p className="text-gray-500 md:text-base text-sm">
                     تعداد محصولات :
                   </p>
-                  <p className="md:text-base text-sm">{cartTotalQty}</p>
+                  <p className="md:text-base text-sm">{cart.cartTotalQty}</p>
                 </div>
 
                 <div className="flex justify-between">
@@ -171,7 +168,7 @@ const CartDesktop = () => {
                   </p>
                 </div>
 
-                <button className="bg-[#2980b9] text-white md:text-lg text-sm rounded-xl py-2 w-full flex  items-center justify-center gap-2">
+                <button className="bg-[#2980b9] text-white md:text-lg text-sm rounded-xl py-2 w-full flex items-center justify-center gap-2">
                   <p>ثبت سفارش</p>
                   <FaChevronLeft fontSize={12} />
                 </button>
