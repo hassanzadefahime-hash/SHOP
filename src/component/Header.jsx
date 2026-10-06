@@ -1,12 +1,11 @@
-import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom";
+import { Link,NavLink } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 import { HiOutlineLogin } from "react-icons/hi";
 import pic from "../assets/logo.png";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoIosSearch } from "react-icons/io";
-import CustomNumeralNumericFormat from "../../../STICKER-SHOP/src/components/CustomNumeralNumericFormat";
 import { useSelector } from "react-redux";
+import CustomNumeralNumericFormat from "./CustomNumeralNumericFormat";
 import { IoPersonOutline } from "react-icons/io5";
 import { GoHome } from "react-icons/go";
 import { TbCategory } from "react-icons/tb";
@@ -15,10 +14,10 @@ import { useGetAllProductsQuery } from "../slices/productApi";
 
 const Header = () => {
   const { cartTotalQty } = useSelector((state) => state.cart);
-  const { data: products } = useGetAllProductsQuery();
   const cart = useSelector((state) => state.cart);
+  const { data: products } = useGetAllProductsQuery();
   const [search, setSearch] = useState("");
-  let filteredproduct = products
+  let filteredproducts = products
   ?.filter((product) => product.title.includes(search))
 
   return (
@@ -48,7 +47,7 @@ const Header = () => {
                 {search.length > 0 ? (
                   <ul className="absolute bg-gray-100 border-1 border-gray-200 top-11 w-full overflow-hidden  flex flex-col gap-2 rounded-xl">
                     {search &&
-                      filteredproduct.length > 0 ? (filteredproduct.map((pro) => (
+                      filteredproducts.length > 0 ? (filteredproducts.map((pro) => (
                         <Link to={`/products/${pro.id}`} onClick={()=>setSearch("")}>
                           <li className="flex flex-row items-center gap-4 hover:bg-white  transition delay-150 duration-300 ease-in-out">
                             <img

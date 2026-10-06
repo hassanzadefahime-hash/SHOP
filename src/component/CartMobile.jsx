@@ -15,7 +15,7 @@ import QtyInput from "./common/Qtyinput";
 import { IoCartOutline } from "react-icons/io5";
 import EmptyCart from "./EmptyCart";
 
-const CartTableSmall = () => {
+const CartMobile = () => {
   const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
   const { cartTotalQty } = useSelector((state) => state.cart);
@@ -155,4 +155,4 @@ const CartTableSmall = () => {
   );
 };
 
-export default CartTableSmall;
+export default CartMobile;

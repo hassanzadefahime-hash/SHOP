@@ -14,7 +14,7 @@ import {
 
 import CustomNumeralNumericFormat from "./CustomNumeralNumericFormat";
 import QtyInput from "./common/Qtyinput";
-import CartTableSmall from "./CartMobile";
+import CartMobile from "./CartMobile";
 import EmptyCart from "./EmptyCart";
 
 const CartDesktop = () => {
@@ -49,7 +49,7 @@ const CartDesktop = () => {
       ) : (
         <>
           <div className="md:hidden block">
-            <CartTableSmall />
+            <CartMobile />
           </div>
 
           <div className="md:w-[90%] w-[90%] mt-10 mx-auto md:block hidden">

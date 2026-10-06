@@ -1,9 +1,4 @@
-import {
-  FiMapPin,
-  FiPhone,
-  FiMail,
-  FiClock,
-} from "react-icons/fi";
+import { FiMapPin, FiPhone, FiMail, FiClock } from "react-icons/fi";
 import { SiInstagram, SiX } from "react-icons/si";
 import { FaTelegramPlane } from "react-icons/fa";
 import { useGetAllCategoryQuery } from "../slices/productApi";
