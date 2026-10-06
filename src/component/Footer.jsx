@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
+
 import { FiMapPin, FiPhone, FiMail, FiClock } from "react-icons/fi";
 import { SiInstagram, SiX } from "react-icons/si";
 import { FaTelegramPlane } from "react-icons/fa";
+
 import { useGetAllCategoryQuery } from "../slices/productApi";
-import { Link } from "react-router-dom";
 
 import pic from "../assets/logo.png";
 
@@ -25,17 +27,17 @@ const Footer = () => {
             فعالیت خود را آغاز کرده ایم .
           </p>
 
-          <div className=" flex gap-4 justify-center ">
+          <div className="flex gap-4 justify-center">
             <span className="p-2 bg-gray-300 rounded-full">
-              <SiInstagram fontSize={19} className="text-gray-600 " />
+              <SiInstagram fontSize={19} className="text-gray-600" />
             </span>
 
             <span className="p-2 bg-gray-300 rounded-full">
-              <FaTelegramPlane fontSize={19} className="text-gray-600 " />
+              <FaTelegramPlane fontSize={19} className="text-gray-600" />
             </span>
 
             <span className="p-2 bg-gray-300 rounded-full">
-              <SiX fontSize={19} className="text-gray-600 " />
+              <SiX fontSize={19} className="text-gray-600" />
             </span>
           </div>
         </div>
@@ -57,25 +59,25 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="flex flex-col gap-3 pl-20 ">
+        <div className="flex flex-col gap-3 pl-20">
           <div className="flex justify-start items-start relative">
             <ul className="text-lg flex flex-col gap-5">
-              <li className=" flex gap-3 items-center font-bold">
+              <li className="flex gap-3 items-center font-bold">
                 <FiMapPin size={20} />
                 <p>تهران، خیابان آزادی</p>
               </li>
 
-              <li className=" flex gap-2 items-center font-bold ">
+              <li className="flex gap-2 items-center font-bold">
                 <FiPhone size={20} />
                 <p>۰۲۱-۱۲۳۴۵۶۷</p>
               </li>
 
-              <li className=" flex gap-2 items-center font-bold">
+              <li className="flex gap-2 items-center font-bold">
                 <FiMail size={20} />
                 <p>info@example.com</p>
               </li>
 
-              <li className=" flex gap-2 items-center font-bold">
+              <li className="flex gap-2 items-center font-bold">
                 <FiClock size={20} />
                 <p>شنبه تا پنجشنبه، ۹تا ۱۸</p>
               </li>

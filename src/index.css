@@ -1,8 +1,6 @@
 @import "tailwindcss";
 @import "../public/css/style.css";
-*{
+
+* {
   font-family: "Vazir";
-  
 }
-
-

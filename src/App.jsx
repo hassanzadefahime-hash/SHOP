@@ -1,6 +1,8 @@
-import "./App.css";
-import MainLayout from "./component/layout/MainLayout";
 import { Outlet } from "react-router-dom";
+
+import MainLayout from "./component/layout/MainLayout";
+
+import "./App.css";
 
 const App = () => {
   return (
@@ -9,4 +11,6 @@ const App = () => {
     </MainLayout>
   );
 };
+
 export default App;
+

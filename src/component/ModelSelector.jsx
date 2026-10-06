@@ -1,4 +1,4 @@
-function ModelSelector() {
+const ModelSelector = () => {
   const models = ["A51", "A53", "A10", "A15", "A55"];
 
   return (
@@ -9,7 +9,11 @@ function ModelSelector() {
         {models.map((model) => (
           <li key={model}>
             <label>
-              <input type="checkbox" value={model} className="peer hidden" />
+              <input
+                type="checkbox"
+                value={model}
+                className="peer hidden"
+              />
 
               <span
                 style={{
@@ -37,6 +41,7 @@ function ModelSelector() {
       </ul>
     </div>
   );
-}
+};
 
 export default ModelSelector;
+

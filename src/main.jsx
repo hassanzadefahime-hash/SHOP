@@ -1,29 +1,33 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./index.css";
-import App from "./App.jsx";
 import { Provider } from "react-redux";
-import { store } from "./store";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import NotFound from "./component/NotFound";
-import ContactUs from "./component/ContactUs";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+import App from "./App.jsx";
 import AboutUs from "./component/AboutUs";
+import ArticleList from "./component/ArticleList";
+import ArticlePage from "./component/ArticlePage";
+import CartDesktop from "./component/CartDesktop";
+import ContactUs from "./component/ContactUs";
+import Home from "./component/Home";
+import NotFound from "./component/NotFound";
 import ProductDetails from "./component/ProductDetails";
 import ProductsGroup from "./component/ProductsGroupPage";
-import ArticlePage from "./component/ArticlePage";
-import Signin from "./component/SignIn";
-import ArticleList from "./component/ArticleList";
-import CartDesktop from "./component/CartDesktop";
-import Home from "./component/Home";
 import ShopPage from "./component/ShopPage";
+import Signin from "./component/SignIn";
 
+import { store } from "./store";
+
+import "./index.css";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     errorElement: <NotFound />,
-
     children: [
       {
         index: true,
@@ -42,7 +46,7 @@ const router = createBrowserRouter([
         element: <ShopPage />,
       },
       {
-        path: "/group/:groupId",
+        path: "group/:groupId",
         element: <ProductsGroup />,
       },
       {
@@ -50,19 +54,19 @@ const router = createBrowserRouter([
         element: <AboutUs />,
       },
       {
-        path: "/products/:productID",
+        path: "products/:productID",
         element: <ProductDetails />,
       },
       {
-        path: "/article",
+        path: "article",
         element: <ArticleList />,
       },
       {
-        path: "/article/:articleId",
+        path: "article/:articleId",
         element: <ArticlePage />,
       },
       {
-        path: "/signin",
+        path: "signin",
         element: <Signin />,
       },
     ],
@@ -76,3 +80,4 @@ createRoot(document.getElementById("root")).render(
     </Provider>
   </StrictMode>
 );
+

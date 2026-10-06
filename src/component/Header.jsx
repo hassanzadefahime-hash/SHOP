@@ -26,21 +26,16 @@ const Header = () => {
 
   return (
     <>
-      {" "}
       <div className="shadow-md z-10 md:inline hidden">
-        {" "}
         <div className="w-full flex justify-between mx-auto pt-2 lg:px-14 md:px-1">
-          {" "}
           <div className="w-1/4">
-            {" "}
             <div className="flex">
-              {" "}
               <Link className="h-full">
-                {" "}
-                <img src={pic} width={120} className="pt-0" />{" "}
-              </Link>{" "}
-            </div>{" "}
+                <img src={pic} width={120} className="pt-0" alt="لوگو" />
+              </Link>
+            </div>
           </div>
+
           <div className="flex items-center justify-center w-1/2">
             <div className="w-3/4 flex relative items-center">
               <div className="absolute end-3">
@@ -49,7 +44,7 @@ const Header = () => {
 
               <div className="flex flex-col w-full">
                 <input
-                  className="bg-gray-100 border-1 border-gray-200 py-2 rounded-full w-full ps-5 pe-10 w-3/4"
+                  className="bg-gray-100 border-1 border-gray-200 py-2 rounded-full w-full ps-5 pe-10"
                   placeholder="دنبال چی میگردی ..."
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
@@ -75,13 +70,16 @@ const Header = () => {
                         </Link>
                       ))
                     ) : (
-                      <div className="text-lg text-center py-4">موجود نیست</div>
+                      <div className="text-lg text-center py-4">
+                        موجود نیست
+                      </div>
                     )}
                   </ul>
                 )}
               </div>
             </div>
           </div>
+
           <div className="flex items-center justify-end lg:gap-8 md:gap-4 w-1/4">
             <div className="border border-gray-300 px-2 py-1.5 flex justify-center items-center gap-2">
               <Link to="/signin">ورود | ثبت نام</Link>
@@ -104,6 +102,7 @@ const Header = () => {
             </div>
           </div>
         </div>
+
         <div className="flex items-center justify-center border-b-1 border-gray-300">
           <div className="flex items-center py-6">
             <ul className="flex gap-10">
@@ -158,12 +157,13 @@ const Header = () => {
           </div>
         </div>
       </div>
+
       <div className="block md:hidden">
         <div className="flex flex-col justify-between gap-1 w-[90%] mx-auto">
           <div className="flex py-4 justify-between items-center w-full">
             <div>
               <Link className="h-full">
-                <img src={pic} width={120} className="" />
+                <img src={pic} width={120} alt="لوگو" />
               </Link>
             </div>
 
@@ -236,3 +236,4 @@ const Header = () => {
 };
 
 export default Header;
+

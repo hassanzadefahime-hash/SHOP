@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import CustomNumeralNumericFormat from "./CustomNumeralNumericFormat";
 
-const OfferProductCard = ({product}) => {
+const OfferProductCard = ({ product }) => {
   return (
     <Link to={`/products/${product.id}`}>
       <div className="flex flex-row md:flex md:flex-col gap-0 border-1 border-gray-200 md:pb-2 overflow-hidden transition delay-150 duration-300 ease-in-out hover:scale-103 hover:boredr">
@@ -33,7 +33,6 @@ const OfferProductCard = ({product}) => {
             </p>
 
             <p className="md:text-base text-sm text-justify text-gray-500 line-clamp-1">
-              {" "}
               {product.description}
             </p>
           </div>
@@ -66,3 +65,4 @@ const OfferProductCard = ({product}) => {
 };
 
 export default OfferProductCard;
+
