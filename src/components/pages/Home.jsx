@@ -4,17 +4,17 @@ import {
   useGetAllArticleQuery,
   useGetAllCategoryQuery,
   useGetAllProductsQuery,
-} from "../slices/productApi";
+} from "../../slices/productApi";
 
 import { TbArticle, TbCategory } from "react-icons/tb";
 import { FaAngleLeft } from "react-icons/fa";
 import { MdOutlineLocalOffer, MdOutlineWebAsset } from "react-icons/md";
 
-import ArticleCard from "./ArticleCard";
-import NewProductCard from "./NewProductCard";
-import HeroSection from "./HeroSection";
-import OfferProductCard from "./OfferProductCard";
-import PromoSlider from "./PromoSlider";
+import ArticleCard from "../ArticleCard";
+import NewProductCard from "../NewProductCard";
+import HeroSection from "../HeroSection";
+import OfferProductCard from "../OfferProductCard";
+import PromoSlider from "../PromoSlider";
 
 const Home = () => {
   const { data: products } = useGetAllProductsQuery();

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { RiLockPasswordLine } from "react-icons/ri";
 
-import pic from "../assets/logo.png";
+import pic from "../assets/images/logo.png";
 
 const SignIn = () => {
   return (

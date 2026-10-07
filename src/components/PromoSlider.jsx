@@ -4,10 +4,10 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import bg1 from "../assets/slide1.png";
-import bg2 from "../assets/slide2.png";
-import bgmobile from "../assets/slide2-mobile.png";
-import bgmobile1 from "../assets/slide1-mobile.png";
+import bg1 from "../assets/images/slide1.png";
+import bg2 from "../assets/images/slide2.png";
+import bgmobile from "../assets/images/slide2-mobile.png";
+import bgmobile1 from "../assets/images/slide1-mobile.png";
 
 const PromoSlider = () => {
   return (

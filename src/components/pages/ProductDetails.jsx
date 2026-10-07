@@ -12,9 +12,9 @@ import "swiper/css/thumbs";
 
 import { LuBadgeCheck, LuShieldCheck } from "react-icons/lu";
 
-import CustomNumeralNumericFormat from "./CustomNumeralNumericFormat";
-import ModelSelector from "./ModelSelector";
-import AddToCart from "./AddToCart";
+import CustomNumeralNumericFormat from "../CustomNumeralNumericFormat";
+import ModelSelector from "../ModelSelector";
+import AddToCart from "../AddToCart";
 
 const ProductDetails = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);

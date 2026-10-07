@@ -1,4 +1,4 @@
-import about from "../assets/about.png";
+import about from "../../assets/images/about.png";
 import { BsBoxSeam } from "react-icons/bs";
 import { SlEmotsmile } from "react-icons/sl";
 import { IoIosStarOutline } from "react-icons/io";

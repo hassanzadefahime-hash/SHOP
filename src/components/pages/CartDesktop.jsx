@@ -11,12 +11,12 @@ import {
   getTotals,
   removeFromCart,
   decreaseCart,
-} from "../slices/cartSlice";
+} from "../../slices/cartSlice";
 
-import CustomNumeralNumericFormat from "./CustomNumeralNumericFormat";
-import QtyInput from "./common/Qtyinput";
-import CartMobile from "./CartMobile";
-import EmptyCart from "./EmptyCart";
+import CustomNumeralNumericFormat from "../CustomNumeralNumericFormat";
+import QtyInput from "../common/Qtyinput";
+import CartMobile from "../CartMobile";
+import EmptyCart from "../EmptyCart";
 
 const CartDesktop = () => {
   const cart = useSelector((state) => state.cart);

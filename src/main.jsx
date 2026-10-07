@@ -7,17 +7,17 @@ import {
 } from "react-router-dom";
 
 import App from "./App.jsx";
-import AboutUs from "./component/AboutUs";
-import ArticleList from "./component/ArticleList";
-import ArticlePage from "./component/ArticlePage";
-import CartDesktop from "./component/CartDesktop";
-import ContactUs from "./component/ContactUs";
-import Home from "./component/Home";
-import NotFound from "./component/NotFound";
-import ProductDetails from "./component/ProductDetails";
-import ProductsGroup from "./component/ProductsGroupPage";
-import ShopPage from "./component/ShopPage";
-import Signin from "./component/SignIn";
+import AboutUs from "./components/pages/AboutUs";
+import ArticleList from "./components/pages/ArticleList";
+import ArticlePage from "./components/pages/ArticlePage";
+import CartDesktop from "./components/pages/CartDesktop";
+import ContactUs from "./components/ContactUs";
+import Home from "./components/pages/Home";
+import NotFound from "./components/pages/NotFound";
+import ProductDetails from "./components/pages/ProductDetails";
+import ProductsGroup from "./components/pages/ProductsGroupPage";
+import ShopPage from "./components/pages/ShopPage";
+import Signin from "./components/SignIn";
 
 import { store } from "./store";
 

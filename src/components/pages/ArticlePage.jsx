@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { useGetArticleByIdQuery } from "../slices/productApi";
+import { useGetArticleByIdQuery } from "../../slices/productApi";
 
 const ArticlePage = () => {
   const { articleId } = useParams();

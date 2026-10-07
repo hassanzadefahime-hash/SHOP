@@ -6,7 +6,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 
 import { useGetAllCategoryQuery } from "../slices/productApi";
 
-import pic from "../assets/logo.png";
+import pic from "../assets/images/logo.png";
 
 const Footer = () => {
   const { data } = useGetAllCategoryQuery();

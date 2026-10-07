@@ -1,5 +1,5 @@
-import hedphone from "../assets/hd.png";
-import hdmobile from "../assets/hd-mobile.png";
+import hedphone from "../assets/images/hd.png";
+import hdmobile from "../assets/images/hd-mobile.png";
 
 import { RiSecurePaymentFill } from "react-icons/ri";
 import { MdVerified } from "react-icons/md";

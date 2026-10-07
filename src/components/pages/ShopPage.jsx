@@ -7,10 +7,10 @@ import { RiSortAsc } from "react-icons/ri";
 import {
   useGetAllCategoryQuery,
   useGetAllProductsQuery,
-} from "../slices/productApi";
+} from "../../slices/productApi";
 
-import ProductCard from "./ProductCard";
-import OfferProductCard from "./OfferProductCard";
+import ProductCard from "../ProductCard";
+import OfferProductCard from "../OfferProductCard";
 
 const ShopPage = () => {
   const { status } = useSelector((state) => state.products);

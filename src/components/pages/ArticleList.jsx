@@ -1,5 +1,5 @@
-import { useGetAllArticleQuery } from "../slices/productApi";
-import ArticleCard from "./ArticleCard";
+import { useGetAllArticleQuery } from "../../slices/productApi";
+import ArticleCard from "../ArticleCard";
 
 const ArticleList = () => {
   const { data: articles, isLoading, isError } = useGetAllArticleQuery();

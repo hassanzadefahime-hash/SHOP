@@ -9,7 +9,7 @@ import { IoIosSearch } from "react-icons/io";
 import { GoHome } from "react-icons/go";
 import { TbCategory } from "react-icons/tb";
 
-import pic from "../assets/logo.png";
+import pic from "../assets/images/logo.png";
 
 import CustomNumeralNumericFormat from "./CustomNumeralNumericFormat";
 import { useGetAllProductsQuery } from "../slices/productApi";

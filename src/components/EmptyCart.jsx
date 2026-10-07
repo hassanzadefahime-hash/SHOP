@@ -1,5 +1,5 @@
 import LottiePackage from "lottie-react";
-import animationData from "../assets/Q8pBN8QJ6y.json";
+import animationData from "../assets/animations/emptycart.json";
 import { Link } from "react-router-dom";
 import { FaArrowLeftLong } from "react-icons/fa6";
 

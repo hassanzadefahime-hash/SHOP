@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 
-import { useGetAllProductsQuery } from "../slices/productApi";
-import ProductCard from "./ProductCard";
+import { useGetAllProductsQuery } from "../../slices/productApi";
+import ProductCard from "../ProductCard";
 
 const ProductsGroupPage = () => {
   const { groupId } = useParams();
