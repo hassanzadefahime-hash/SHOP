@@ -2,9 +2,9 @@ import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 
 
-import CustomNumeralNumericFormat from "../../CustomNumeralNumericFormat";
-import ModelSelector from "../../ModelSelector";
-import AddToCart from "../../AddToCart";
+import CustomNumeralNumericFormat from "../CustomNumeralNumericFormat";
+import ModelSelector from "../ModelSelector";
+import AddToCart from "../AddToCart";
 
 const ProductInfo = () => {
   const { productID } = useParams();

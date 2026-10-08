@@ -1,6 +1,6 @@
-import ProductGallery from "./product/ProductGallery";
-import ProductInfo from "./product/ProductInfo";
-import ProductFeatures from "./product/ProductFeatures";
+import ProductGallery from "../product/ProductGallery";
+import ProductInfo from "../product/ProductInfo";
+import ProductFeatures from "../product/ProductFeatures";
 
 const ProductDetails = () => {
   return (
