@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { TbCategory } from "react-icons/tb";
 
-import Loadercat from "../../assets/animations/Loadercat.json";
+import Loadercat from "../../assets/animations/notfound.json";
 
 const NotFound = () => {
   const Lottie = LottiePackage.default;
