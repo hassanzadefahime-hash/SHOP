@@ -11,7 +11,7 @@ import bgmobile1 from "../assets/images/slide1-mobile.png";
 
 const PromoSlider = () => {
   return (
-    <div className="min-h-40 md:h-80 h-35 lg:w-[80%] w-[95%] mx-auto overflow-hidden">
+    <div className="min-h-40 md:h-80 h-35 mx-auto overflow-hidden w-full">
       <Swiper
         spaceBetween={20}
         slidesPerView={1}
