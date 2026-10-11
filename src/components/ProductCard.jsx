@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import CustomNumeralNumericFormat from "./CustomNumeralNumericFormat";
+import { getImageUrl } from "../config";
 
 const ProductCard = ({ product }) => {
   return (
@@ -7,7 +8,7 @@ const ProductCard = ({ product }) => {
       <div className="flex flex-row md:flex md:flex-col gap-0 border-1 border-gray-200 md:pb-2 overflow-hidden transition delay-150 duration-300 ease-in-out hover:scale-103">
         <img
           className="md:w-full w-2/5 aspect-square object-cover"
-          src={`http://localhost:9000/images/${product.sticker}`}
+          src={getImageUrl(product.sticker)}
         />
 
         <div className="md:px-1 lg:px-3 md:w-full w-3/5 pl-4 pr-4 md:pt-0 pt-0 flex flex-col justify-between gap-2 pb-1">

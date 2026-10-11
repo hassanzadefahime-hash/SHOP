@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import CustomNumeralNumericFormat from "./CustomNumeralNumericFormat";
+import { getImageUrl } from "../config";
 
 const NewProductCard = ({ product }) => {
   return (
@@ -19,7 +20,7 @@ const NewProductCard = ({ product }) => {
           <div className="w-full h-full">
             <img
               className="md:w-full w-full h-full aspect-square object-cover"
-              src={`http://localhost:9000/images/${product.sticker}`}
+              src={getImageUrl(product.sticker)}
             />
           </div>
         </div>

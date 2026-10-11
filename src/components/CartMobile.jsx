@@ -17,6 +17,8 @@ import CustomNumeralNumericFormat from "./CustomNumeralNumericFormat";
 import QtyInput from "./common/Qtyinput";
 import EmptyCart from "./EmptyCart";
 
+import { getImageUrl } from "../config";
+
 const CartMobile = () => {
   const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
@@ -62,7 +64,7 @@ const CartMobile = () => {
                   >
                     <div className="flex items-center">
                       <img
-                        src={`http://localhost:9000/images/${item.sticker}`}
+                        src={getImageUrl(item.sticker)}
                         alt={item.title}
                         className="sm:inline-flex w-[98%] mx-auto aspect-square object-cover"
                       />

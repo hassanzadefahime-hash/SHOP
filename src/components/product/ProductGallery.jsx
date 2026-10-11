@@ -10,6 +10,8 @@ import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 
+import { getImageUrl } from "../../config";
+
 const ProductGallery = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
@@ -37,14 +39,14 @@ const ProductGallery = () => {
           {" "}
           <div className="flex justify-center items-center">
             <img
-              src={`http://localhost:9000/images/${product?.sticker}`}
+              src={getImageUrl(product?.sticker)}
               alt={product?.title}
             />{" "}
           </div>{" "}
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src={`http://localhost:9000/images/${product?.sticker}`}
+            src={getImageUrl(product?.sticker)}
             alt={product?.title}
           />
         </SwiperSlide>
@@ -63,7 +65,7 @@ const ProductGallery = () => {
         <SwiperSlide>
           <div className="h-20">
             <img
-              src={`http://localhost:9000/images/${product?.sticker}`}
+              src={getImageUrl(product?.sticker)}
               alt={product?.title}
             />
           </div>
@@ -71,7 +73,7 @@ const ProductGallery = () => {
 
         <SwiperSlide className="h-20">
           <img
-            src={`http://localhost:9000/images/${product?.sticker}`}
+            src={getImageUrl(product?.sticker)}
             alt={product?.title}
           />
         </SwiperSlide>

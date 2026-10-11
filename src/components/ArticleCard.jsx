@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { getImageUrl } from "../config";
 
 const ArticleCard = ({ article }) => {
   return (
@@ -8,7 +9,7 @@ const ArticleCard = ({ article }) => {
         <div className="lg:w-[80%] w-[85%] h-full relative">
           <img
             className="w-full h-full"
-            src={`http://localhost:9000/images/${article.pic}`}
+            src={getImageUrl(article.pic)}
           />
           <div
             className="absolute inset-y-0 right-0 lg:w-60 w-25 bg-gradient-to-l from-gray-100 to-transparent"></div>

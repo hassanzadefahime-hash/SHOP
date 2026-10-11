@@ -3,6 +3,8 @@ import { IoIosSearch } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { useGetAllProductsQuery } from "../../slices/productApi";
 
+import { getImageUrl } from "../../config";
+
 const SearchBox = () => {
   const { data: products } = useGetAllProductsQuery();
 
@@ -38,7 +40,7 @@ const SearchBox = () => {
                   <li className="flex flex-row items-center gap-4 hover:bg-white transition delay-150 duration-300 ease-in-out">
                     <img
                       className="w-16 aspect-square object-cover"
-                      src={`http://localhost:9000/images/${product.sticker}`}
+                      src={getImageUrl(product.sticker)}
                       alt={product.title}
                     />
                     {product.title}

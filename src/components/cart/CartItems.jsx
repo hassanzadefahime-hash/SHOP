@@ -12,6 +12,8 @@ import {
 import CustomNumeralNumericFormat from "../CustomNumeralNumericFormat";
 import QtyInput from "../common/Qtyinput";
 
+import { getImageUrl } from "../../config";
+
 const CartItems = () => {
   const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
@@ -37,7 +39,7 @@ const CartItems = () => {
         >
           <div>
             <img
-              src={`http://localhost:9000/images/${item.sticker}`}
+              src={getImageUrl(item.sticker)}
               alt={item.title}
               height={185}
               width={190}

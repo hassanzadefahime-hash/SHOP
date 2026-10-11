@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom";
 import { useGetArticleByIdQuery } from "../../slices/productApi";
 
+import { getImageUrl } from "../../config";
+
 const ArticlePage = () => {
   const { articleId } = useParams();
   const { data } = useGetArticleByIdQuery(articleId);
@@ -18,7 +20,7 @@ const ArticlePage = () => {
         <div className="w-3/5 lg:w-3/5 h-full relative">
           <img
             className="w-full h-full"
-            src={`http://localhost:9000/images/${data?.pic}`}
+            src={getImageUrl(data?.pic)}
             alt={data?.name}
           />
           <div className="absolute inset-y-0 right-0 w-20 lg:w-50 bg-gradient-to-l from-gray-100 to-transparent"></div>

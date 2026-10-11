@@ -2,6 +2,7 @@ import { FaAngleLeft } from "react-icons/fa";
 import { TbCategory } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import { useGetAllCategoryQuery } from "../../slices/productApi";
+import { getImageUrl } from "../../config";
 
 const HomeCategories = () => {
   const { data } = useGetAllCategoryQuery();
@@ -22,7 +23,7 @@ const HomeCategories = () => {
             <button className="lg:h-[100%] w-full h-full relative flex flex-col md:gap-1 gap-2 justify-center items-center aspect-square">
               <img
                 className="lg:h-[100%] w-full h-full absolute"
-                src={`http://localhost:9000/images/${item.pic}`}
+                src={getImageUrl(item.pic)}
               />
 
               <div
