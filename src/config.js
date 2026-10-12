@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = "https://marbin-api.onrender.com/";
 
 export const getImageUrl = (image) => {
   if (!image) return "";
