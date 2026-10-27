@@ -101,8 +101,8 @@
             "price": 80000,
             "discount": 10,
             "description": "گلس شفاف محافظ صفحه نمایش با وضوح مناسب برای محافظت روزمره در برابر خط‌وخش.",
-            "sticker": "9.webp",
-            "groupId": "03"
+            "sticker": "8.webp",
+            "groupId": "02"
         },
         {
             "id": "10",
@@ -110,8 +110,8 @@
             "price": 120000,
             "discount": 15,
             "description": "گلس محافظ صفحه با لبه‌های مشکی و پوشش کامل‌تر؛ سازگاری آن با مدل گوشی باید بررسی شود.",
-            "sticker": "10.webp",
-            "groupId": "03"
+            "sticker": "9.webp",
+            "groupId": "02"
         },
         {
             "id": "11",
@@ -119,70 +119,70 @@
             "price": 180000,
             "discount": 10,
             "description": "گلس حریم خصوصی برای کاهش دید از زوایای کناری؛ عملکرد و سازگاری به مدل محصول بستگی دارد.",
-            "sticker": "11.webp",
-            "groupId": "03"
-        },
-        {
-            "id": "09",
-            "title": "استیکر کد قهوه تکرار",
-            "price": 3000,
-            "discount": 0,
-            "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهومت.",
-            "sticker": "Code-Coffee-Repeat.jpg",
+            "sticker": "7.webp",
             "groupId": "02"
         },
         {
-            "id": "10",
-            "title": "استیکر تبدیل قهوه به کد",
-            "price": 3000,
-            "discount": 0,
-            "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهومت.",
-            "sticker": "Coffee-to-Code.jpg",
+            "id": "16",
+            "title": "هدفون بی‌سیم مشکی",
+            "price": 850000,
+            "discount": 10,
+            "description": "هدفون بی‌سیم با طراحی مدرن، مناسب گوش دادن به موسیقی و استفاده روزمره.",
+            "sticker": "16.webp",
             "groupId": "03"
         },
         {
-            "id": "11",
-            "title": "استیکر Coffee Script",
-            "price": 3000,
-            "discount": 0,
-            "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهومت.",
-            "sticker": "Coffee-Script.jpg",
+            "id": "17",
+            "title": "هدفون بی‌سیم سفید",
+            "price": 950000,
+            "discount": 10,
+            "description": "هدفون سفید با طراحی ساده و شیک برای گوش دادن به موسیقی و محتوای صوتی.",
+            "sticker": "17.webp",
             "groupId": "03"
         },
         {
-            "id": "12",
-            "title": "استیکر تبدیل قهوه به کد",
-            "price": 3000,
-            "discount": 0,
-            "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهومت.",
-            "sticker": "Coffe-to-Code.jpg",
+            "id": "18",
+            "title": "هندزفری بلوتوثی",
+            "price": 650000,
+            "discount": 5,
+            "description": "هندزفری بلوتوثی همراه با محفظه شارژ، مناسب استفاده روزانه.",
+            "sticker": "18.webp",
             "groupId": "03"
         },
         {
-            "id": "13",
-            "title": "استیکر قهوه",
-            "price": 3000,
+            "id": "19",
+            "title": "هندزفری سیمی",
+            "price": 180000,
             "discount": 0,
-            "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهومت.",
-            "sticker": "Coffee.jpg",
+            "description": "هندزفری سیمی سبک برای گوش دادن به موسیقی و مکالمه با دستگاه‌های سازگار.",
+            "sticker": "19.webp",
             "groupId": "03"
         },
         {
-            "id": "14",
-            "title": "استیکر Css To Html",
-            "price": 3000,
-            "discount": 0,
-            "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهومت.",
-            "sticker": "CSS-to-HTML.jpg",
+            "id": "20",
+            "title": "هدفون روگوشی نقره‌ای",
+            "price": 1200000,
+            "discount": 15,
+            "description": "هدفون روگوشی با ظاهر شیک، مناسب استفاده روزمره و شنیدن موسیقی.",
+            "sticker": "20.webp",
             "groupId": "03"
         },
         {
-            "id": "15",
-            "title": "استیکر Css",
-            "price": 3000,
-            "discount": 0,
-            "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهومت.",
-            "sticker": "CSS.jpg",
+            "id": "21",
+            "title": "هدست گیمینگ",
+            "price": 1450000,
+            "discount": 10,
+            "description": "هدست گیمینگ با میکروفون برای بازی و مکالمه؛ مشخصات دقیق به مدل محصول بستگی دارد.",
+            "sticker": "21.webp",
+            "groupId": "03"
+        },
+        {
+            "id": "22",
+            "title": "هندزفری بلوتوثی گردنی",
+            "price": 350000,
+            "discount": 5,
+            "description": "هندزفری گردنی بی‌سیم با طراحی سبک برای استفاده روزمره و گوش دادن به موسیقی.",
+            "sticker": "22.webp",
             "groupId": "03"
         },
         {
