@@ -185,60 +185,61 @@
             "sticker": "22.webp",
             "groupId": "03"
         },
-        {
-            "id": "16",
-            "title": "استیکر Developer",
-            "price": 3000,
-            "discount": 0,
-            "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهومت.",
-            "sticker": "Developer.jpg",
-            "groupId": "03"
-        },
-        {
-            "id": "17",
-            "title": "استیکر Dont Touch",
-            "price": 3000,
-            "discount": 0,
-            "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهومت.",
-            "sticker": "Dont-Touch.jpg",
-            "groupId": "03"
-        },
-        {
-            "id": "18",
-            "title": "استیکر Emc2",
-            "price": 3000,
-            "discount": 0,
-            "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهومت.",
-            "sticker": "Emc2.jpg",
-            "groupId": "03"
-        },
-        {
-            "id": "19",
-            "title": "استیکر False",
-            "price": 3000,
-            "discount": 0,
-            "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهومت.",
-            "sticker": "False.jpg",
-            "groupId": "03"
-        },
-        {
-            "id": "20",
-            "title": "استیکر Food Sleep",
-            "price": 3000,
-            "discount": 0,
-            "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهومت.",
-            "sticker": "Food-Sleep.jpg",
-            "groupId": "03"
-        },
-        {
-            "id": "21",
-            "title": "استیکر Geek Girl",
-            "price": 3000,
-            "discount": 0,
-            "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهومت.",
-            "sticker": "Geek-Girl.jpg",
-            "groupId": "03"
-        },
+            {
+              "id": "22",
+              "title": "آداپتور شارژر",
+              "price": 250000,
+              "discount": 10,
+              "description": "آداپتور شارژ موبایل با طراحی جمع‌وجور برای شارژ دستگاه‌های سازگار.",
+              "sticker": "22.webp",
+              "groupId": "05"
+            },
+            {
+              "id": "23",
+              "title": "کابل شارژ USB-C",
+              "price": 120000,
+              "discount": 5,
+              "description": "کابل شارژ USB-C مناسب دستگاه‌های سازگار برای شارژ و انتقال اطلاعات.",
+              "sticker": "23.webp",
+              "groupId": "05"
+            },
+            {
+              "id": "24",
+              "title": "پاوربانک",
+              "price": 750000,
+              "discount": 10,
+              "description": "پاوربانک قابل حمل برای شارژ دستگاه‌های سازگار در زمان سفر و استفاده روزانه.",
+              "sticker": "24.webp",
+              "groupId": "05"
+            },
+            {
+              "id": "25",
+              "title": "هولدر موبایل",
+              "price": 180000,
+              "discount": 0,
+              "description": "پایه نگهدارنده موبایل برای استفاده راحت‌تر از گوشی در خودرو یا محیط کار، بسته به نوع نصب.",
+              "sticker": "25.webp",
+              "groupId": "05"
+            },
+            {
+              "id": "26",
+              "title": "پایه نگهدارنده انگشتی",
+              "price": 80000,
+              "discount": 5,
+              "description": "اکسسوری کوچک برای نگه داشتن راحت‌تر گوشی و کمک به کنترل بهتر آن هنگام استفاده.",
+              "sticker": "26.webp",
+              "groupId": "05"
+            },
+            {
+              "id": "27",
+              "title": "شارژر بی‌سیم",
+              "price": 450000,
+              "discount": 10,
+              "description": "پد شارژ بی‌سیم برای دستگاه‌های دارای قابلیت شارژ بی‌سیم سازگار.",
+              "sticker": "27.webp",
+              "groupId": "05"
+            }
+          ,
         {
             "id": "22",
             "title": "استیکر Geek Inside",
