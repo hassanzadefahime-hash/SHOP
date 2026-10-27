@@ -2,14 +2,14 @@ import { LuBadgeCheck, LuShieldCheck } from "react-icons/lu";
 
 const ProductFeatures = () => {
   return (
-    <div className="md:w-[80%] w-[90%] mx-auto border border-gray-300 rounded-xl px-8 py-6 mb-4">
+    <div className="md:w-[80%] w-[90%] mx-auto border border-gray-300 rounded-xl md:px-8 px-1 py-6 mb-4">
       <div className="flex items-center gap-2 mb-8">
         <LuBadgeCheck className="text-3xl" />
         <h2 className="text-2xl font-bold">ویژگی‌های محصول</h2>
       </div>
 
       <div className="grid md:grid-cols-3 grid-cols-1 gap-8">
-        <div className="flex gap-2 md:flex-col flex-row">
+        <div className="flex gap-2 md:flex-col flex-col">
           <div className="flex gap-2 items-center">
             <div
               className="w-8 h-8 rounded-2xl
@@ -29,7 +29,7 @@ const ProductFeatures = () => {
         </div>
 
         <div className="flex gap-2 md:flex-col flex-row">
-          <div className="flex gap-2 items-center">
+          <div className="flex md:gap-2 items-center">
             <div
               className="w-8 h-8 rounded-2xl
             bg-blue-50/80 backdrop-blur-md
