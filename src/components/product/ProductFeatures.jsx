@@ -8,8 +8,8 @@ const ProductFeatures = () => {
         <h2 className="text-2xl font-bold">ویژگی‌های محصول</h2>
       </div>
 
-      <div className="grid grid-cols-3 gap-8">
-        <div className="flex gap-2 flex-col">
+      <div className="grid md:grid-cols-3 grid-cols-1 gap-8">
+        <div className="flex gap-2 md:flex-col flex-row">
           <div className="flex gap-2 items-center">
             <div
               className="w-8 h-8 rounded-2xl
@@ -28,7 +28,7 @@ const ProductFeatures = () => {
           </p>
         </div>
 
-        <div className="flex gap-2 flex-col">
+        <div className="flex gap-2 md:flex-col flex-row">
           <div className="flex gap-2 items-center">
             <div
               className="w-8 h-8 rounded-2xl
@@ -47,7 +47,7 @@ const ProductFeatures = () => {
           </p>
         </div>
 
-        <div className="flex gap-2 flex-col">
+        <div className="flex gap-2 md:flex-col flex-row">
           <div className="flex gap-2 items-center">
             <div
               className="w-8 h-8 rounded-2xl
@@ -66,7 +66,7 @@ const ProductFeatures = () => {
           </p>
         </div>
 
-        <div className="flex gap-2 flex-col">
+        <div className="flex gap-2 md:flex-col flex-row">
           <div className="flex gap-2 items-center">
             <div
               className="w-8 h-8 rounded-2xl
@@ -85,7 +85,7 @@ const ProductFeatures = () => {
           </p>
         </div>
 
-        <div className="flex gap-2 flex-col">
+        <div className="flex gap-2 md:flex-col flex-row">
           <div className="flex gap-2 items-center">
             <div
               className="w-8 h-8 rounded-2xl
@@ -105,7 +105,7 @@ const ProductFeatures = () => {
         </div>
 
         <div className="flex gap-2 flex-col">
-          <div className="flex gap-2 items-center">
+          <div className="flex gap-2 md:flex-col flex-row">
             <div
               className="w-8 h-8 rounded-2xl
             bg-blue-50/80 backdrop-blur-md
