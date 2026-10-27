@@ -60,25 +60,25 @@ const MobileHeader = () => {
       <div className="py-2 bg-white border-t-1 border-gray-200 fixed bottom-0 right-0 left-0 z-10000">
         <div className="flex justify-around">
 
-          <Link to={"/"} className="flex flex-col gap-1 items-center">
+          <Link to={"/products"} className="flex flex-col gap-1 items-center">
             <IoCartOutline fontSize={22} />
             <p className="text-sm">فروشگاه</p>
           </Link>
 
-          <div className="flex flex-col gap-1 items-center">
+          <Link to={"/contactus"} className="flex flex-col gap-1 items-center">
             <BsTelephone fontSize={22} />
             <p className="text-sm">تماس با ما</p>
-          </div>
+          </Link>
 
-          <div className="flex flex-col gap-1 items-center">
+          <Link to={"/aboutus"} className="flex flex-col gap-1 items-center">
             <RxPeople fontSize={22} />
             <p className="text-sm">درباره‌ما</p>
-          </div>
+          </Link>
 
-          <div className="flex flex-col gap-1 items-center">
+          <Link to={"/article"} className="flex flex-col gap-1 items-center">
             <TbArticle fontSize={22} />
             <p className="text-sm">خواندنی‌ها</p>
-          </div>
+          </Link>
         </div>
       </div>
     </div>
