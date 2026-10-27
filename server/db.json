@@ -185,122 +185,122 @@
             "sticker": "22.webp",
             "groupId": "03"
         },
-            {
-              "id": "22",
-              "title": "آداپتور شارژر",
-              "price": 250000,
-              "discount": 10,
-              "description": "آداپتور شارژ موبایل با طراحی جمع‌وجور برای شارژ دستگاه‌های سازگار.",
-              "sticker": "28.webp",
-              "groupId": "04"
-            },
-            {
-              "id": "23",
-              "title": "کابل شارژ USB-C",
-              "price": 120000,
-              "discount": 5,
-              "description": "کابل شارژ USB-C مناسب دستگاه‌های سازگار برای شارژ و انتقال اطلاعات.",
-              "sticker": "23.webp",
-              "groupId": "04"
-            },
-            {
-              "id": "24",
-              "title": "پاوربانک",
-              "price": 750000,
-              "discount": 10,
-              "description": "پاوربانک قابل حمل برای شارژ دستگاه‌های سازگار در زمان سفر و استفاده روزانه.",
-              "sticker": "24.webp",
-              "groupId": "04"
-            },
-            {
-              "id": "25",
-              "title": "هولدر موبایل",
-              "price": 180000,
-              "discount": 0,
-              "description": "پایه نگهدارنده موبایل برای استفاده راحت‌تر از گوشی در خودرو یا محیط کار، بسته به نوع نصب.",
-              "sticker": "25.webp",
-              "groupId": "04"
-            },
-            {
-              "id": "26",
-              "title": "پایه نگهدارنده انگشتی",
-              "price": 80000,
-              "discount": 5,
-              "description": "اکسسوری کوچک برای نگه داشتن راحت‌تر گوشی و کمک به کنترل بهتر آن هنگام استفاده.",
-              "sticker": "26.webp",
-              "groupId": "04"
-            },
-            {
-              "id": "27",
-              "title": "شارژر بی‌سیم",
-              "price": 450000,
-              "discount": 10,
-              "description": "پد شارژ بی‌سیم برای دستگاه‌های دارای قابلیت شارژ بی‌سیم سازگار.",
-              "sticker": "27.webp",
-              "groupId": "04"
-            }
-          ,
         {
             "id": "22",
-            "title": "استیکر Geek Inside",
-            "price": 3000,
-            "discount": 0,
-            "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهومت.",
-            "sticker": "Geek-Inside.jpg",
-            "groupId": "03"
+            "title": "آداپتور شارژر",
+            "price": 250000,
+            "discount": 10,
+            "description": "آداپتور شارژ موبایل با طراحی جمع‌وجور برای شارژ دستگاه‌های سازگار.",
+            "sticker": "28.webp",
+            "groupId": "04"
         },
         {
             "id": "23",
-            "title": "استیکر Geek",
-            "price": 3000,
-            "discount": 0,
-            "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهومت.",
-            "sticker": "Geek.jpg",
-            "groupId": "03"
+            "title": "کابل شارژ USB-C",
+            "price": 120000,
+            "discount": 5,
+            "description": "کابل شارژ USB-C مناسب دستگاه‌های سازگار برای شارژ و انتقال اطلاعات.",
+            "sticker": "23.webp",
+            "groupId": "04"
         },
         {
             "id": "24",
-            "title": "استیکر Gem",
-            "price": 3000,
-            "discount": 0,
-            "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهومت.",
-            "sticker": "Gem.jpg",
+            "title": "پاوربانک",
+            "price": 750000,
+            "discount": 10,
+            "description": "پاوربانک قابل حمل برای شارژ دستگاه‌های سازگار در زمان سفر و استفاده روزانه.",
+            "sticker": "24.webp",
             "groupId": "04"
         },
         {
             "id": "25",
-            "title": "استیکر Github",
-            "price": 3000,
+            "title": "هولدر موبایل",
+            "price": 180000,
             "discount": 0,
-            "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهومت.",
-            "sticker": "Github-Saye.jpg",
+            "description": "پایه نگهدارنده موبایل برای استفاده راحت‌تر از گوشی در خودرو یا محیط کار، بسته به نوع نصب.",
+            "sticker": "25.webp",
             "groupId": "04"
         },
         {
             "id": "26",
-            "title": "استیکر Google Geek",
-            "price": 3000,
-            "discount": 0,
-            "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهومت.",
-            "sticker": "Google-Geek.jpg",
+            "title": "پایه نگهدارنده انگشتی",
+            "price": 80000,
+            "discount": 5,
+            "description": "اکسسوری کوچک برای نگه داشتن راحت‌تر گوشی و کمک به کنترل بهتر آن هنگام استفاده.",
+            "sticker": "26.webp",
             "groupId": "04"
         },
         {
             "id": "27",
-            "title": "استیکر Hacker Inside",
-            "price": 3000,
-            "discount": 0,
-            "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهومت.",
-            "sticker": "Hacker-Inside.jpg",
+            "title": "شارژر بی‌سیم",
+            "price": 450000,
+            "discount": 10,
+            "description": "پد شارژ بی‌سیم برای دستگاه‌های دارای قابلیت شارژ بی‌سیم سازگار.",
+            "sticker": "27.webp",
             "groupId": "04"
         },
         {
-            "id": "28",
-            "title": "استیکر Hello World",
-            "price": 3000,
-            "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهومت.",
-            "sticker": "Hello-World.jpg",
-            "groupId": "04"
+            "id": "29",
+            "title": "ایرپاد نسل ۲ سفید",
+            "price": 1200000,
+            "discount": 0,
+            "description": "ایرپاد بی‌سیم سفید با کیس شارژ",
+            "sticker": "30.webp",
+            "groupId": "05"
+        },
+        {
+            "id": "30",
+            "title": "ایرپاد بلوتوثی مشکی",
+            "price": 1500000,
+            "discount": 0,
+            "description": "هدفون بی‌سیم مشکی با کیس شارژ",
+            "sticker": "31.webp",
+            "groupId": "05"
+        },
+        {
+            "id": "31",
+            "title": "ایرپاد پرو سفید",
+            "price": 1800000,
+            "discount": 0,
+            "description": "ایرپاد بی‌سیم مدل پرو با سری سیلیکونی",
+            "sticker": "32.webp",
+            "groupId": "05"
+        },
+        {
+            "id": "32",
+            "title": "ایرپاد سفید کلاسیک",
+            "price": 1100000,
+            "discount": 0,
+            "description": "هدفون بی‌سیم با طراحی ساده و کیس شارژ",
+            "sticker": "33.webp",
+            "groupId": "05"
+        },
+        {
+            "id": "33",
+            "title": "ایرپاد صورتی",
+            "price": 1400000,
+            "discount": 0,
+            "description": "هدفون بی‌سیم صورتی با کیس شارژ",
+            "sticker": "34.webp",
+            "groupId": "05"
+        },
+        {
+            "id": "34",
+            "title": "ایرپاد پرو مشکی",
+            "price": 1900000,
+            "discount": 0,
+            "description": "هدفون بی‌سیم مشکی با سری سیلیکونی",
+            "sticker": "35.webp",
+            "groupId": "05"
+        },
+        {
+            "id": "35",
+            "title": "ایرپاد همراه جعبه",
+            "price": 1600000,
+            "discount": 0,
+            "description": "هدفون بی‌سیم سفید همراه کیس شارژ",
+            "sticker": "36.webp",
+            "groupId": "05"
         }
     ]
 }
