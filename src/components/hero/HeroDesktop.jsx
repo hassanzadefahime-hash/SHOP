@@ -332,7 +332,7 @@ const HeroDesktop = () => {
 
           <img
             src={hedphone}
-            className="headphone w-full z-2 mt-0 absolute top-14"
+            className="headphone  z-2 mt-0 absolute top-14"
             style={{
               filter: "drop-shadow(0 35px 45px rgba(0,0,0,.35))",
             }}
