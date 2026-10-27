@@ -191,7 +191,7 @@
               "price": 250000,
               "discount": 10,
               "description": "آداپتور شارژ موبایل با طراحی جمع‌وجور برای شارژ دستگاه‌های سازگار.",
-              "sticker": "22.webp",
+              "sticker": "28.webp",
               "groupId": "04"
             },
             {
@@ -300,24 +300,6 @@
             "price": 3000,
             "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهومت.",
             "sticker": "Hello-World.jpg",
-            "groupId": "04"
-        },
-        {
-            "id": "29",
-            "title": "استیکر I Am Programmer",
-            "price": 3000,
-            "discount": 0,
-            "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهومت.",
-            "sticker": "I-am-Programmer.jpg",
-            "groupId": "04"
-        },
-        {
-            "id": "30",
-            "title": "استیکر Node",
-            "price": 3000,
-            "discount": 0,
-            "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهومت.",
-            "sticker": "Js-Node.jpg",
             "groupId": "04"
         }
     ]
