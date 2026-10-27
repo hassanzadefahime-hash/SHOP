@@ -29,7 +29,7 @@ const ProductFeatures = () => {
         </div>
 
         <div className="flex gap-2 md:flex-col flex-col">
-          <div className="flex md:gap-2 items-center">
+          <div className="flex gap-2 items-center">
             <div
               className="w-8 h-8 rounded-2xl
             bg-blue-50/80 backdrop-blur-md
@@ -104,8 +104,8 @@ const ProductFeatures = () => {
           </p>
         </div>
 
-        <div className="flex gap-2 flex-col">
-          <div className="flex gap-2 md:flex-col flex-col">
+        <div className="flex gap-2 md:flex-col flex-col">
+          <div className="flex gap-2 items-center">
             <div
               className="w-8 h-8 rounded-2xl
             bg-blue-50/80 backdrop-blur-md
