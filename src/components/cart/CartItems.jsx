@@ -13,6 +13,7 @@ import CustomNumeralNumericFormat from "../CustomNumeralNumericFormat";
 import QtyInput from "../common/Qtyinput";
 
 import { getImageUrl } from "../../config";
+import Skeleton from "react-loading-skeleton";
 
 const CartItems = () => {
   const cart = useSelector((state) => state.cart);
@@ -37,7 +38,7 @@ const CartItems = () => {
           className="border-1 border-gray-300 grid grid-cols-3 rounded-2xl overflow-hidden mb-4"
           key={item.id}
         >
-          <div>
+          <Skeleton>
             <img
               src={getImageUrl(item.sticker)}
               alt={item.title}
@@ -45,7 +46,7 @@ const CartItems = () => {
               width={190}
               className="hidden sm:inline-flex"
             />
-          </div>
+          </Skeleton>
 
           <div className="flex flex-col py-6 justify-between">
             <div className="flex gap-3 flex-col">
